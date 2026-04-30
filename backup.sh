@@ -1,6 +1,6 @@
 #!/bin/bash
 set -euo pipefail
-tar -czf opencode-backup.tar.gz -C "${HOME}" --exclude='._*' \
+COPYFILE_DISABLE=1 tar -czf opencode-backup.tar.gz -C "${HOME}" \
     .config/opencode/opencode.json \
     .config/opencode/opencode.jsonc \
     .config/opencode/AGENTS.md \

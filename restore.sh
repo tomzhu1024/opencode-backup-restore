@@ -1,3 +1,3 @@
 #!/bin/bash
 set -euo pipefail
-tar -xzf opencode-backup.tar.gz -C "${HOME}" --exclude='._*'
+COPYFILE_DISABLE=1 tar -xzf opencode-backup.tar.gz -C "${HOME}"
